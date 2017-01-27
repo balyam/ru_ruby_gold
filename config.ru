@@ -1,0 +1,2 @@
+require './mainapp'
+run MainApp

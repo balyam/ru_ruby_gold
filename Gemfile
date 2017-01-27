@@ -2,7 +2,8 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'sinatra'
+gem 'sinatra/base'
 gem 'thin'
 gem 'nokogiri'
+gem 'mechanize'
 gem 'json'
