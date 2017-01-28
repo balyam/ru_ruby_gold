@@ -7,7 +7,7 @@ class MainApp < Sinatra::Base
 
   get '/' do
   	store = YAML::Store.new('db.yml')
-  	@price = store.transaction{store['rate'][1][:gold_value]}
+  	@price = store.transaction{store["rate"]}
 
      erb :index
 
