@@ -3,10 +3,12 @@ require 'sinatra/base'
 
 class MainApp < Sinatra::Base
 require 'yaml/store'
+require_relative './helpers/goldrate'
+
+helpers GoldRate
 
   get '/' do
-  	store = YAML::Store.new('db.yml')
-  	@price = store.transaction{store["rate"]}
+	@price = get_db("db.yml", "rate")
     erb :index
   end
 end
