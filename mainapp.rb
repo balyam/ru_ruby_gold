@@ -11,6 +11,12 @@ helpers GoldRate
 	@price = get_db("db.yml", "rate")
     erb :index
   end
+
+  get '/kgz' do 
+  	@price = get_db("db.yml", "rate")
+  	erb :kgz
+  end
+
 end
 
 
