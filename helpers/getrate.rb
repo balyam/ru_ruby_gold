@@ -45,7 +45,7 @@ show_kgs = {}
       end
     end
   # puts 'Let's get gold price!'
-  agent = Mechanize.new
+   agent = Mechanize.new
     gold = agent.get(gold_url)
     html_gold = Nokogiri::HTML(gold.body, 'UTF-8')
 
