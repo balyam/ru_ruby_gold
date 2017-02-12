@@ -2,12 +2,12 @@ require 'sinatra/base'
 
 module Sinatra
   module GoldRate
-    require 'yaml/store'
+    require 'redis'
 
     # Get hash of values for different currency(group)
-    def get_db(dbname, group)
-      store = YAML::Store.new(dbname)
-      store.transaction { store[group] }
+    def get_db(group)
+      store = Redis.new
+      store.hgetall(group)
     end    
   end
   helpers GoldRate
