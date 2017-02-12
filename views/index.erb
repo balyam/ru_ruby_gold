@@ -1,19 +1,19 @@
 
                <h1>Цена 1 грамма золота в тенге</h1>
 
-               <p> Расчет на основе текущей цены 1 тройской унции (<%= @price.fetch(:gold_value)%> USD) и курса доллара (<%= @price.fetch(:currency_kzt) %> KZT).</p>
+               <p> Расчет на основе текущей цены 1 тройской унции (<%= @price.fetch("gold_value")%> USD) и курса доллара (<%= @price.fetch("currency_kzt") %> KZT).</p>
 
                <hr>
 
                <div id="counter" class="group">
                   <span>585<em>проба</em></span> 
                   <span><em>-</em></span> 
-                  <span><%= @price.fetch(:"0.585") %><em>тенге</em></span>                  
+                  <span><%= @price.fetch("0.585") %><em>тенге</em></span>                  
                </div>   
                <div id="counter" class="group">
                   <span>750<em>проба</em></span> 
                   <span><em>-</em></span> 
-                  <span><%= @price.fetch(:"0.75")%><em>тенге</em></span>                 
+                  <span><%= @price.fetch("0.75")%><em>тенге</em></span>                 
                </div>
                <div>
                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -29,17 +29,17 @@
                <div id="counter" class="group">
                   <span>375<em>проба</em></span> 
                   <span><em>-</em></span> 
-                  <span><%= @price.fetch(:"0.375") %><em>тенге</em></span>                 
+                  <span><%= @price.fetch("0.375") %><em>тенге</em></span>                 
                </div> 
                <div id="counter" class="group">
                   <span>916<em>проба</em></span> 
                   <span><em>-</em></span> 
-                  <span><%= @price.fetch(:"0.916") %> <em>тенге</em></span>                 
+                  <span><%= @price.fetch("0.916") %> <em>тенге</em></span>                 
                </div> 
                <div id="counter" class="group">
                   <span>999<em>проба</em></span> 
                   <span><em>-</em></span> 
-                  <span><%= @price.fetch(:"0.999") %><em>тенге</em></span>                 
+                  <span><%= @price.fetch("0.999") %><em>тенге</em></span>                 
                </div>        
                
           
