@@ -6,7 +6,7 @@ module Sinatra
 
     # Get hash of values for different currency(group)
     def get_db(group)
-      store = Redis.new
+      store = Redis.new(:url => ENV["REDISCLOUD_URL"])
       store.hgetall(group)
     end    
   end

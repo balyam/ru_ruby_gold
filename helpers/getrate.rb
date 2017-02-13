@@ -18,7 +18,7 @@ kzt_url = URI('http://nationalbank.kz/?docid=747&switch=russian')
 kgs_url = URI('http://www.nbkr.kg/XML/daily.xml')
 gold_url = 'http://www.kitco.com/charts/livegold.html'
 mark_gold = [0.375, 0.583, 0.585, 0.750, 0.916, 0.999]
-@store = Redis.new
+@store = Redis.new(:url => ENV["REDISCLOUD_URL"])
 
     # Let's get KZT currency rate
     kzt_page = Net::HTTP.get(kzt_url)
