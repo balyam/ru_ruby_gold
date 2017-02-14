@@ -1,0 +1,5 @@
+.rspec
+/log
+/tmp
+/spec/tmp
+dump.rdb
