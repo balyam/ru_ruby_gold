@@ -47,22 +47,28 @@
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-         <ul id="nav" class="nav">
-            <li class=""><a class="smoothscroll" href="/"><img src="./images/Kazakhstan.png"></a></li>
-            <li class=""><a class="smoothscroll" href="/kgz"><img src="./images/Kyrgyzstan.png"></a></li>
-            <li class=""><a class="smoothscroll" href="/rub"><img src="./images/Russia.png"></a></li>
-            <li class=""><a class="smoothscroll" href="#contact">Контакт</a></li>
+         <ul id="nav" class="nav">            
+            <% @curr_symbols.each do |link| %>
+            <% if link == "KZT" %>
+              <li class=""><a class="smoothscroll" href="/"><img src="./images/<%= link %>.png"></a></li>
+            <% else %>
+              <li class=""><a class="smoothscroll" href="/<%= link.downcase %>"><img src="./images/<%= link %>.png"></a></li>
+            <% end %>
+            <% end %>
+                        
          </ul>       
       </nav>
          <!-- end #nav -->
-
-
 
       <!-- main  -->
       <main class="row">
 
             <div id="main-content" class="twelve columns">
 
+               <h1>Цена 1 грамма золота в <%= @price.fetch('url') %></h1>
+               <p> Расчет на основе текущей цены 1 тройской унции (<%= @price.fetch('gold_value')%> USD) 
+               и курса доллара (<%= @price.fetch('currency') %> <%= @price.fetch('url') %>).</p>
+               <hr>
 
                <%= yield %>      
                

@@ -7,18 +7,18 @@ helpers Sinatra::GoldRate
 
 store = Redis.new(:url => ENV["REDISCLOUD_URL"])
 
-  get '/' do
-    @price = get_db(store, "KZT")
+before do
+@curr_symbols = ["KZT", "KGS", "RUB", "BYN", "AZN", "AMD", "UZS", "UAH", "TJS", "USD"]
+end
+
+  get '/' do    
+    @price = get_db(store, "KZT")    
     erb :index
   end
 
-  get '/kgz' do
-    @price = get_db(store, "KGS")
-    erb :kgz
+  get '/:url' do
+    @price = get_db(store, params[:url].upcase)
+    erb :rub
   end
 
-  get '/rub' do
-  	@price = get_db(store, "RUB")
-  	erb :rus
-  end
 end
