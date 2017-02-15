@@ -18,7 +18,7 @@ exch_url = URI("https://openexchangerates.org/api/latest.json?app_id=#{ENV['EXCH
 gold_url = 'http://www.kitco.com/charts/livegold.html'
 
 mark_gold = [0.375, 0.583, 0.585, 0.750, 0.916, 0.999]
-currency_symbol = ["KZT", "KGS", "RUB", "BYN", "AZN", "AMD", "UZS", "UAH", "TJS", "TMT", "USD"]
+currency_symbol = ["KZT", "KGS", "RUB", "BYN", "AZN", "UZS", "UAH"]
 @store = Redis.new(:url => ENV["REDISCLOUD_URL"])
 rates = JSON.parse(Net::HTTP.get(exch_url))
 
