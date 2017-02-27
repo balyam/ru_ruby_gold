@@ -7,7 +7,7 @@ module Sinatra
     # Get hash of values for different currency(group)
     def get_db(obj, currency)
       obj.hgetall(currency)
-    end    
+    end
   end
   helpers GoldRate
 end
