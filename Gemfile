@@ -1,10 +1,10 @@
 # frozen_string_literal: true
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
+gem 'json'
+gem 'mechanize'
+gem 'nokogiri'
+gem 'openexchangerates_data', '~>0.1.1'
+gem 'redis', '~>3.2'
 gem 'sinatra'
 gem 'thin'
-gem 'nokogiri'
-gem 'mechanize'
-gem 'json'
-gem 'redis', '~>3.2'
-gem 'openexchangerates_data', '~>0.1.1'
