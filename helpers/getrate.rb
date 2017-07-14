@@ -6,6 +6,7 @@ def probe_arr(gold_price, arr_probe)
   arr_probe.map { |probe| [probe, (gramm_price * probe).to_f.round(2)] }
 end
 
+# All magic is here
 module GetRate
   require 'net/http'
   require 'nokogiri'

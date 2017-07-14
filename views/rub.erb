@@ -1,8 +1,12 @@
 
+               <% content_for :title do %>
+               <title>Цена золота 585 и 750 пробы в Украине сегодня</title>
+                <meta name="description" content="Сколько сегодня стоит 1 грамм золота в гривнах, в ломбарде. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы."> 
+                <% end %>
                <div id="counter" class="group">
                   <span>585<em>проба</em></span> 
                   <span><em>-</em></span> 
-                  <span><%= @price.fetch("0.585") %><em><%= @price.fetch('url') %></em></span>                  
+                  <span><%= @price.fetch('0.585') %><em><%= @price.fetch('url') %></em></span>                
                </div>   
                <div id="counter" class="group">
                   <span>750<em>проба</em></span> 
