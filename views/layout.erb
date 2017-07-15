@@ -61,7 +61,7 @@
 
             <div id="main-content" class="twelve columns">
 
-               <h1>Цена 1 грамма золота в <%= @price.fetch('url') %></h1>
+               <h1>Цена 1 грамма золота в <%= @metatag[:meta_country][0] %></h1>
                <p> Расчет на основе текущей цены 1 тройской унции (<%= @price.fetch('gold_value')%> USD) 
                и курса доллара (<%= @price.fetch('currency') %> <%= @price.fetch('url') %>).</p>
                <hr>

@@ -3,3 +3,4 @@
 /log
 /tmp
 /spec/tmp
+/helpers/fill_metatags.rb
