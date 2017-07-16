@@ -10,6 +10,7 @@ class MainApp < Sinatra::Base
   before do
     @curr_symbols ||= %w(KZT KGS RUB BYN AZN UZS UAH)
     @yaml_store ||= YAML.load_file(File.join('meta.yml'))
+    @today = Time.now
   end
 
   get '/' do

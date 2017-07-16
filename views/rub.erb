@@ -1,7 +1,8 @@
 
                <% content_for :title do %>
-               <title>Цена золота 585 и 750 пробы в <%= @metatag[:meta_country][0] %> сегодня</title>
-                <meta name="description" content="Сколько сегодня стоит 1 грамм золота в <%= @metatag[:meta_currency][0] %>. Цена в ломбардах <%= @metatag[:meta_country][1] %>. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы."> 
+               <title>Цена золота 585 и 750 пробы в <%= @metatag[:meta_country][0] %> сегодня 
+               <%= @today.strftime("%d-%m-%Y")%></title>
+                <meta name="description" content="Сколько сегодня стоит 1 грамм золота в <%= @metatag[:meta_currency][0] %>. Цена в ломбардах <%= @metatag[:meta_country][1] %> на <%= @today.strftime("%d-%m-%Y")%>. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы."> 
                 <% end %>
                <div id="counter" class="group">
                   <span>585<em>проба</em></span> 
