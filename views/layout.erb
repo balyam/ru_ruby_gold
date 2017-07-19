@@ -51,8 +51,7 @@
             <% else %>
               <li class=""><a class="smoothscroll" href="/<%= link.downcase %>"><img src="./images/<%= link %>.png"></a></li>
             <% end %>
-            <% end %>
-                        
+            <% end %>                        
          </ul>       
       </nav>
          <!-- end #nav -->
@@ -60,16 +59,9 @@
       <!-- main  -->
       <main class="row">
 
-            <div id="main-content" class="twelve columns">
-
-               <h1>Цена 1 грамма золота в <%= @metatag[:meta_country][0] %></h1>               
-               <p>Цена 1 тройской унции (<%= @price.fetch('gold_value')%> USD) 
-               и курс доллара (<%= @price.fetch('currency') %> <%= @price.fetch('url') %>).</p>
-               <span> Сегодня <%= @today.strftime("%d-%m-%Y")%>: </span>
-               <hr>
-
-               <%= yield %>      
-               
+            <div id="main-content" class="twelve columns">               
+               <%= yield_content :h1_block %>
+               <%= yield %>               
             </div><!-- /main-content form -->
 
             <div class="modal-toggles">
@@ -98,7 +90,8 @@
      	</ul>   
 
      	<ul class="footer-copyright">
-         <li>&copy; Copyright 2017 Advent</li>
+         <li>&copy; Copyright 2017</li>
+         <li><a href="/disclaimer">Отказ от гарантий</a>
          <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
          <li> <!-- Yandex.Metrika informer -->
 <a href="https://metrika.yandex.ru/stat/?id=39702280&amp;from=informer"
