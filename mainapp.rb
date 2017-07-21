@@ -8,8 +8,9 @@ class MainApp < Sinatra::Base
   helpers Sinatra::ContentFor
 
   before do
-    @curr_symbols ||= %w(KZT KGS RUB BYN AZN UZS UAH)
     @yaml_store ||= YAML.load_file(File.join('meta.yml'))
+    @curr_symbols = {}
+    @yaml_store.each_pair { |key, value| @curr_symbols[key] = value[:meta_country].last }
     @today = Time.now
   end
 
@@ -28,6 +29,6 @@ class MainApp < Sinatra::Base
     @price = get_db($redis, params[:url].upcase)
     @metatag = @yaml_store.fetch(params[:url].upcase)
     @current_url = @price.fetch('url')
-    erb :rub    
+    erb :rub
   end
 end

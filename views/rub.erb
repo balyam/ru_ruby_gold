@@ -1,10 +1,10 @@
 
                <% content_for :title do %>
-               <title>Цена золота 585 и 750 пробы в <%= @metatag[:meta_country][0] %> сегодня <%= @today.strftime("%d-%m-%Y")%></title>
-                <meta name="description" content="Сколько сегодня стоит 1 грамм золота в <%= @metatag[:meta_currency][0] %>. Цена в ломбардах <%= @metatag[:meta_country][1] %> на <%= @today.strftime("%d-%m-%Y")%>. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы."> 
+               <title>Цена золота 585 и 750 пробы в <%= @metatag[:meta_country].first %> сегодня <%= @today.strftime("%d-%m-%Y")%></title>
+                <meta name="description" content="Сколько сегодня стоит 1 грамм золота в <%= @metatag[:meta_currency].first %>. Цена в ломбардах <%= @metatag[:meta_country][1] %> на <%= @today.strftime("%d-%m-%Y")%>. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы."> 
                 <% end %>
                 <% content_for :h1_block do %>
-                <h1>Цена 1 грамма золота в <%= @metatag[:meta_country][0] %></h1>               
+                <h1>Цена 1 грамма золота в <%= @metatag[:meta_country].first %></h1>               
                <p>Цена 1 тройской унции (<%= @price.fetch('gold_value')%> USD) 
                и курс доллара (<%= @price.fetch('currency') %> <%= @current_url %>).</p>
                <span> Сегодня <%= @today.strftime("%d-%m-%Y")%>: </span>

@@ -45,11 +45,11 @@
    <nav id="nav-wrap" style="display: block;" class="">        
 
          <ul id="nav" class="nav">            
-            <% @curr_symbols.each do |link| %>
+            <% @curr_symbols.each_pair do |link, country| %>
             <% if link == "KZT" %>
-              <li class=""><a class="smoothscroll" href="/"><img src="./images/<%= link %>.png"></a></li>
+              <li class=""><a class="smoothscroll" href="/"><img alt="<%= country %>" src="./images/<%= link %>.png"></a></li>
             <% else %>
-              <li class=""><a class="smoothscroll" href="/<%= link.downcase %>"><img src="./images/<%= link %>.png"></a></li>
+              <li class=""><a class="smoothscroll" href="/<%= link.downcase %>"><img alt="<%= country %>" src="./images/<%= link %>.png"></a></li>
             <% end %>
             <% end %>                        
          </ul>       

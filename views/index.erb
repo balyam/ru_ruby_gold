@@ -4,7 +4,7 @@
                 <meta name="description" content="Сколько сегодня стоит 1 грамм золота в тенге. Цены в ломбардах Казахстана. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы."> 
                 <% end %>
                 <% content_for :h1_block do %>
-                <h1>Цена 1 грамма золота в <%= @metatag[:meta_country][0] %></h1>               
+                <h1>Цена 1 грамма золота в <%= @metatag[:meta_country].first %></h1>               
                <p>Цена 1 тройской унции (<%= @price.fetch('gold_value')%> USD) 
                и курс доллара (<%= @price.fetch('currency') %> <%= @current_url %>).</p>
                <span> Сегодня <%= @today.strftime("%d-%m-%Y")%>: </span>
