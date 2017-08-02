@@ -31,4 +31,8 @@ class MainApp < Sinatra::Base
     @current_url = @price.fetch('url')
     erb :rub
   end
+
+  not_found do
+    erb :disclaimer
+  end
 end
