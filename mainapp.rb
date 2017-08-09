@@ -26,13 +26,21 @@ class MainApp < Sinatra::Base
   end
 
   get '/:url' do
-    @price = get_db($redis, params[:url].upcase)
-    @metatag = @yaml_store.fetch(params[:url].upcase)
-    @current_url = @price.fetch('url')
-    erb :rub
+    if @yaml_store.key?(params[:url].upcase)
+      @price = get_db($redis, params[:url].upcase)
+      @metatag = @yaml_store.fetch(params[:url].upcase)
+      @current_url = @price.fetch('url')
+      erb :rub
+    else
+      halt 404
+  end
   end
 
   not_found do
-    erb :disclaimer
+    erb :'404'
+  end
+
+  error do
+    'Sorry there was a nasty error'
   end
 end
