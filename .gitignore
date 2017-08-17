@@ -2,5 +2,6 @@
 .rspec
 /log
 /tmp
+/spec
 /spec/tmp
 /helpers/fill_metatags.rb

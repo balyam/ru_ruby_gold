@@ -8,6 +8,10 @@ module Sinatra
     def get_db(obj, currency)
       obj.hgetall(currency)
     end
+
+    def url_valid?(url, yaml_store)
+      yaml_store.key?(url.upcase)
+    end
   end
   helpers GoldRate
 end

@@ -10,7 +10,11 @@ class MainApp < Sinatra::Base
   before do
     @yaml_store ||= YAML.load_file(File.join('meta.yml'))
     @curr_symbols = {}
-    @yaml_store.each_pair { |key, value| @curr_symbols[key] = value[:meta_country].last }
+
+    @yaml_store.each_pair do |key, value|
+      @curr_symbols[key] = value[:meta_country].last
+    end
+
     @today = Time.now
   end
 
@@ -26,14 +30,14 @@ class MainApp < Sinatra::Base
   end
 
   get '/:url' do
-    if @yaml_store.key?(params[:url].upcase)
-      @price = get_db($redis, params[:url].upcase)
-      @metatag = @yaml_store.fetch(params[:url].upcase)
-      @current_url = @price.fetch('url')
+    @url = params[:url].upcase
+    if url_valid?(@url, @yaml_store)
+      @price = get_db($redis, @url)
+      @metatag = @yaml_store.fetch(@url)
       erb :rub
     else
       halt 404
-  end
+    end
   end
 
   not_found do

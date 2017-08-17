@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-source 'https://rubygems.org'
+source  'https://rubygems.org'
 
 gem 'json'
 gem 'mechanize'
@@ -9,3 +9,8 @@ gem 'redis', '~>3.2'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'thin'
+
+group :test do
+  gem 'rack-test'
+  gem 'rspec'
+end
