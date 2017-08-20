@@ -447,7 +447,7 @@ main::after {
 }
 
 main h1 {
-	font: 38px/1.2em "montserrat-bold", sans-serif;
+	font: 28px/1.2em "montserrat-bold", sans-serif;
 	color: #fbca08;
 	margin-bottom: 12px;
 	padding: 0;
@@ -578,13 +578,13 @@ main .site-header .logo a {
 	width: 90%;
 	color: white;
 	text-align: center;
-	margin: 18px auto 0;
+	margin: 5px auto 0;
 }
 
 #counter span {
-	font: 62px/1em "montserrat-bold", sans-serif;
+	font: 52px/1em "montserrat-bold", sans-serif;
 	display: block;
-	padding: 12px 0 30px;
+	padding: 5px 0 10px;
 	min-width: 25%;
 	float: left;
 }
@@ -604,7 +604,7 @@ main .site-header .logo a {
 	}
 
 	#counter span {
-		font: 58px/1em "montserrat-bold", sans-serif;
+		font: 52px/1em "montserrat-bold", sans-serif;
 	}
 
 }
