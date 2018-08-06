@@ -6,7 +6,7 @@ gem 'mechanize'
 gem 'nokogiri'
 gem 'openexchangerates_data', '~>0.1.1'
 gem 'redis', '~>3.2'
-gem 'sinatra'
+gem 'sinatra', '~>2.0.2'
 gem 'sinatra-contrib'
 gem 'thin'
 
