@@ -1,13 +1,13 @@
 
                <% content_for :title do %>
                <title>Цена золота в некоторых странах</title> 
-                <meta name="description" content="Полный список стран с ценами на золота в национальных валютах"> 
+                <meta name="description" content="Полный список стран с ценами на золото в национальных валютах"> 
                <% end %>
 
                <div id="main-content" class="twelve columns">
 
-               <h1>Цена золота в некоторых странах</h1>
-               <p>Gold price in all countries allover the world: scroll down,then click on your country to display gold price details in this country. </p>
+               <h1>Цена 1 грамма золота в некоторых странах</h1>
+               <p>Gold price in some countries: scroll down,then click on your country to display gold price details. </p>
                <% @allcurr.sort.each do |curr| %> 
                <div id="allcountry" class="group">
                   <span><img src="/images/<%= curr.upcase %>.png"> <a href="/<%= curr.downcase %>"><%= curr %></span> 

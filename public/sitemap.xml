@@ -6,36 +6,57 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>http://ru.goldnp.com/</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>http://ru.goldnp.com/allcurr</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/kzt</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>http://ru.goldnp.com/kgs</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ru.goldnp.com/rub</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ru.goldnp.com/uah</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ru.goldnp.com/uzs</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ru.goldnp.com/byn</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/azn</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/uzs</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/disclaimer</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>http://ru.goldnp.com/byn</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/rub</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/uah</loc>
+  <lastmod>2018-08-26T17:59:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>

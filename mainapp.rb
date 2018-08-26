@@ -9,15 +9,9 @@ class MainApp < Sinatra::Base
 
   before do
     @top_menu_symbols ||= %w[KZT KGS AZN UZS]
-    @yaml_store ||= YAML.load_file(File.join('meta.yml'))    
+    @yaml_store ||= YAML.load_file(File.join('meta.yml'))
     @today = Time.now
     @allcurr = %w[KZT KGS RUB BYN AZN UZS UAH AMD GEL MDL TJS TMT]
-
-    @curr_symbols = {}
-
-    @yaml_store.each_pair do |key, value|
-      @curr_symbols[key] = value[:meta_country].last
-    end
   end
 
   get '/' do
