@@ -17,7 +17,7 @@ module GetRate
   gold_url = 'http://www.kitco.com/charts/livegold.html'
 
   mark_gold = [0.375, 0.583, 0.585, 0.750, 0.916, 0.999]
-  currency_symbol = %w(KZT KGS RUB BYN AZN UZS UAH)
+  currency_symbol = %w[KZT KGS RUB BYN AZN UZS UAH AMD GEL MDL TJS TMT]
   @store = Redis.new(url: ENV['REDISCLOUD_URL'])
   rates = OpenexchangeratesData::Client.new.latest
 

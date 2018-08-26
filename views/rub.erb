@@ -7,11 +7,10 @@
     <% end %>
         <% content_for :h1_block do %>
             <h1>Цена 1 грамма золота в <%= @metatag[:meta_country].first %></h1>
-            <p>Цена 1 тройской унции (
+            <p>Сегодня <%= @today.strftime("%d-%m-%Y")%>. Цена 1 тройской унции (
                 <%= @price.fetch('gold_value')%> USD) и курс доллара (
                     <%= @price.fetch('currency') %>
-                        <%= @url %>).</p>
-            <span> Сегодня <%= @today.strftime("%d-%m-%Y")%>: </span>
+                        <%= @url %>). Все цены указаны в <%= @metatag[:meta_currency].first %> </p>            
             <hr>
             <% end %>
                 <div id="counter" class="group">

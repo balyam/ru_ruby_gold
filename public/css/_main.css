@@ -126,7 +126,7 @@ h6 {
 }
 
 p {
-	margin: 10px 0 10px 0;
+	margin: 15px 0 15px 0;
 }
 
 p img {
@@ -462,10 +462,10 @@ main p {
 
 main hr {
 	border: solid #fbca08;
-	border-width: 3px 0 0;
-	margin: 10px auto 12px;
+	border-width: 5px 0 0;
+	margin: 19px auto 12px;
 	height: 0;
-	width: 150px;
+	width: 100px;
 }
 
 main .site-header .logo {
@@ -574,23 +574,17 @@ main .site-header .logo a {
 
 /* counter 
 ------------------------------------------ */
-#allcountry {
-	width: 80%;
-	color: white;
-	text-align: center;
-	margin: 5px auto 0;
-}
 #counter {
-	width: 60%;
+	width: 90%;
 	color: white;
 	text-align: center;
 	margin: 5px auto 0;
 }
 
 #counter span {
-	font: 32px/1em "montserrat-bold", sans-serif;
+	font: 52px/1em "montserrat-bold", sans-serif;
 	display: block;
-	padding: 5px 0 5px;
+	padding: 5px 0 10px;
 	min-width: 25%;
 	float: left;
 }
