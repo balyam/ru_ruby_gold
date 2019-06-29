@@ -7,6 +7,16 @@ KZT:
   :meta_currency:
   - казахстанских тенге
   - Qazaqstan teñgesi
+  :h1_text:
+  - Қазақстанда 1 грамм алтынның бағасы
+  :h1_today:
+    - Бүгін
+  :h1_goldprice:
+    - Алтынның 1 трой унциясының бағасы
+  :h1_usd:
+    - АҚШ долларының бағасы
+  :h1_price:
+    - Қазақстан валютасы - теңге
 UAH:
   :meta_currency:
   - украинских гривнах
@@ -15,6 +25,16 @@ UAH:
   - Украине
   - Украины
   - Украина
+  :h1_text:
+    - Ціна 1 грама золота в Україні
+  :h1_today:
+    - Сьогодні
+  :h1_goldprice:
+    - Ціна 1 тройської унції золота
+  :h1_usd:
+    - Ціна долара США
+  :h1_price:
+    - Валюта України - гривня
 UZS:
   :meta_country:
   - Узбекистане
@@ -23,6 +43,16 @@ UZS:
   :meta_currency:
   - узбекских сумах
   - O'zbekiston so'mi
+  :h1_text:
+    - O'zbekistonda 1 gramm oltin narxi
+  :h1_today:
+    - Bugun
+  :h1_goldprice:
+    - Narxlar 1 troy oltin
+  :h1_usd:
+    - AQSh dollari narxi
+  :h1_price:
+    - O'zbekiston valyutasi - Sum
 KGS:
   :meta_country:
   - Кыргызстане
@@ -31,6 +61,16 @@ KGS:
   :meta_currency:
   - кыргызских сомах
   - Кыргыз сому
+  :h1_text:
+    - Кыргызстанда алтын 1 грамм баасы
+  :h1_today:
+    - Бүгүн
+  :h1_goldprice:
+    - 1 герге боюнча алтындын баасы
+  :h1_usd:
+    - АКШ доллары баасы
+  :h1_price:
+    - Кыргызстан акча - сом
 RUB:
   :meta_country:
   - России
@@ -39,6 +79,16 @@ RUB:
   :meta_currency:
   - российских рублях
   - Российский рубль
+  :h1_text:
+    - The price of 1 gram of gold in Russia
+  :h1_today:
+    - Today
+  :h1_goldprice:
+    - Price 1 troy ounce of gold
+  :h1_usd:
+    - 1 USD
+  :h1_price:
+    - Currency of Russia - rouble
 BYN:
   :meta_country:
   - Беларуси
@@ -47,6 +97,16 @@ BYN:
   :meta_currency:
   - беларусских рублях
   - Беларускі рубель
+  :h1_text:
+    - Цана 1 грама золата ў Беларусь
+  :h1_today:
+    - Cёння
+  :h1_goldprice:
+    - Цана 1 тройскай унцыі золата
+  :h1_usd:
+    - Кошт даляра ЗША
+  :h1_price:
+    - Валюта Беларусі - рубель
 AZN:
   :meta_country:
   - Азербайджане
@@ -55,6 +115,16 @@ AZN:
   :meta_currency:
   - манат
   - Azərbaycan manatı
+  :h1_text:
+    - Azərbaycanda 1 qram qızılın qiyməti
+  :h1_today:
+    - Bu gün
+  :h1_goldprice:
+    - Qiymət 1 troy unsiya qızıl
+  :h1_usd:
+    - ABŞ dolları qiyməti
+  :h1_price:
+    - Azərbaycan valyutası manatdır
 AMD:
   :meta_country:
   - Армении
@@ -63,6 +133,16 @@ AMD:
   :meta_currency:
   - армянских драмах
   - Հայկական դրամ
+  :h1_text:
+    - Հայաստանում 1 գրամ ոսկու գինը
+  :h1_today:
+    - Այսօր
+  :h1_goldprice:
+    - Գինը 1 տրոյական ունցիա ոսկի
+  :h1_usd:
+    - ԱՄՆ դոլարի գինը
+  :h1_price:
+    - Հայկական դրամը `դրամ
 GEL:
   :meta_country:
   - Грузии
@@ -71,6 +151,16 @@ GEL:
   :meta_currency:
   - грузинских лари
   - ქართული ლარი
+  :h1_text:
+    - აზერბაიჯანში 1 გრამი ოქროს ფასი
+  :h1_today:
+    - დღეს
+  :h1_goldprice:
+    - ფასი 1 troy უნცია ოქროს
+  :h1_usd:
+    - აშშ დოლარის ფასი
+  :h1_price:
+    - ქართული ვალუტა - ლარი
 MDL:
   :meta_country:
   - Молдове
@@ -79,6 +169,16 @@ MDL:
   :meta_currency:
   - молдовских леях
   - Leu moldovenesc
+  :h1_text:
+    - Prețul unui gram de aur în Moldova
+  :h1_today:
+    - Azi
+  :h1_goldprice:
+    - Preț 1 uncie de aur
+  :h1_usd:
+    - Prețul în dolari americani
+  :h1_price:
+    - Moneda moldovenească - lei
 TJS:
   :meta_country:
   - Таджикистане
@@ -87,6 +187,16 @@ TJS:
   :meta_currency:
   - таджикских сомони
   - Тоҷикистон сомонӣ
+  :h1_text:
+  - Нархи 1 грамм алюминий дар Тоҷикистон  
+  :h1_today:
+    - Имрӯз
+  :h1_goldprice:
+    - Нархи 1 тилло 
+  :h1_usd:
+    - Нархи доллари ИМА
+  :h1_price:
+    - Асъори Тоҷикистон - сомонӣ
 TMT:
   :meta_country:
   - Туркменистане
@@ -95,3 +205,13 @@ TMT:
   :meta_currency:
   - туркменских манатах
   - Türkmen Manaty
+  :h1_text:
+    - The price of 1 gram of gold in Russia 
+  :h1_today:
+    - Today
+  :h1_goldprice:
+    - Price 1 troy ounce of gold
+  :h1_usd:
+    - 1 USD
+  :h1_price:
+    - Currency of Turkmenistan - Türkmen Manaty

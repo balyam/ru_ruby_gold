@@ -75,7 +75,7 @@ h6 {
 	color: #575859;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
-	margin: 18px 0 15px;
+	margin: 15px 0 15px;
 }
 
 h1 a,
@@ -88,15 +88,15 @@ h6 a {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 36px;
 	margin-top: 0;
 	letter-spacing: -1px;
 }
 
 h2 {
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 20px;
+	line-height: 28px;
 }
 
 h3 {
@@ -447,23 +447,31 @@ main::after {
 }
 
 main h1 {
-	font: 28px/1.2em "montserrat-bold", sans-serif;
+	font: 20px/1.2em "montserrat-bold", sans-serif;
+	color: #fbca08;
+	margin-bottom: 12px;
+	padding: 0;
+}
+
+main h2 {
+	font: 20px/1.2em "montserrat-bold", sans-serif;
 	color: #fbca08;
 	margin-bottom: 12px;
 	padding: 0;
 }
 
 main p {
-	font: 17px/36px "montserrat-regular", sans-serif;
+	font: 16px/36px "montserrat-regular", sans-serif;
 	color: #fff;
-	margin-bottom: 18px;
+	margin-bottom: 14px;
+	line-height: 20px;
 	padding: 0;
 }
 
 main hr {
 	border: solid #fbca08;
 	border-width: 3px 0 0;
-	margin: 10px auto 12px;
+	margin: 10px auto 10px;
 	height: 0;
 	width: 150px;
 }
