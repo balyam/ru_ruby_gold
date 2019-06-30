@@ -504,11 +504,16 @@ main .site-header .logo a {
 	}
 
 	main h1 {
-		font: 35px/1.2em "montserrat-bold", sans-serif;
+		font: 32px/1.2em "montserrat-bold", sans-serif;
+	}
+
+	main h2 {
+		font: 32px/1.2em "montserrat-bold", sans-serif;
 	}
 
 	main p {
 		font: 16px/30px "montserrat-regular", sans-serif;
+		line-height: 20px;
 	}
 
 	main .site-header .logo {
@@ -531,8 +536,13 @@ main .site-header .logo a {
 		font: 32px/1.2em "montserrat-bold", sans-serif;
 	}
 
+	main h2 {
+		font: 32px/1.2em "montserrat-bold", sans-serif;
+	}
+
 	main p {
 		font: 15px/30px "montserrat-regular", sans-serif;
+		line-height: 20px;
 	}
 
 	main .site-header .logo {
@@ -549,9 +559,11 @@ main .site-header .logo a {
 	main h1 {
 		font: 30px/1.2em "montserrat-bold", sans-serif;
 	}
-
+	main h2 {
+		font: 30px/1.2em "montserrat-bold", sans-serif;
+	}
 	main p {
-		line-height: 27px;
+		line-height: 20px;
 	}
 
 	main::after {
@@ -568,9 +580,12 @@ main .site-header .logo a {
 	main h1 {
 		font: 28px/1.2em "montserrat-bold", sans-serif;
 	}
-
+	main h2 {
+		font: 28px/1.2em "montserrat-bold", sans-serif;
+	}
 	main p {
 		font: 14px/27px "montserrat-regular", sans-serif;
+		line-height: 20px;
 	}
 
 	main .site-header .logo a {
@@ -596,7 +611,7 @@ main .site-header .logo a {
 }
 
 #counter span {
-	font: 32px/1em "montserrat-bold", sans-serif;
+	font: 28px/1em "montserrat-bold", sans-serif;
 	display: block;
 	padding: 5px 0 5px;
 	min-width: 25%;
@@ -618,7 +633,7 @@ main .site-header .logo a {
 	}
 
 	#counter span {
-		font: 52px/1em "montserrat-bold", sans-serif;
+		font: 42px/1em "montserrat-bold", sans-serif;
 	}
 
 }
@@ -629,7 +644,7 @@ main .site-header .logo a {
 	}
 
 	#counter span {
-		font: 52px/1em "montserrat-bold", sans-serif;
+		font: 42px/1em "montserrat-bold", sans-serif;
 	}
 
 }
@@ -640,7 +655,7 @@ main .site-header .logo a {
 	}
 
 	#counter span {
-		font: 48px/1em "montserrat-bold", sans-serif;
+		font: 42px/1em "montserrat-bold", sans-serif;
 	}
 
 }
