@@ -430,6 +430,10 @@ input[type="checkbox"] {
 
 }
 
+#blog-content {
+	text-align: left;
+}
+
 /* main
 ------------------------------------------ */
 main.row {
