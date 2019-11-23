@@ -87,10 +87,11 @@
                     <li class="location"><a href="http://lombardo.kz/reklama-na-sajte">Ваша реклама</a></li>
                 </ul>
             </div>
-            <div id="main-content" class="twelve columns">
-            <p> Стоимость на золото фиксирует Лондонская биржа металлов, фиксация происходит ежедневно два раза в сутки. Фиксинг производят 5 членов золотого пула, которые за несколько минут определяют равновесную цену на золото, но фактическая цена может быть как больше, так и гораздо меньше в зависимости от человеческого фактора.
-               </p>
-            </div>
+
+            <!-- useful content --->
+            <%= yield_content :useful_content %>
+            <!--- end of useful content --->
+            
             <!-- /modal-toggles -->
         </main>
     </div>
@@ -106,45 +107,9 @@
             <li><a href="#"><i class="fa fa-skype"></i></a></li>
         </ul>
         <ul class="footer-copyright">
-            <li>&copy; Copyright 2017 - 2019</li>
+            <li>&copy; Copyright 2017 - 2020</li>
             <li><a href="/disclaimer">Отказ от гарантий</a>
-                <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
-                <li>
-                    <!-- Yandex.Metrika informer -->
-                    <a href="https://metrika.yandex.ru/stat/?id=45574977&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/45574977/1_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="45574977" data-lang="ru" /></a>
-                    <!-- /Yandex.Metrika informer -->
-                    <!-- Yandex.Metrika counter -->
-                    <script type="text/javascript">
-                    (function(d, w, c) {
-                        (w[c] = w[c] || []).push(function() {
-                            try {
-                                w.yaCounter45574977 = new Ya.Metrika({
-                                    id: 45574977,
-                                    clickmap: true,
-                                    trackLinks: true,
-                                    accurateTrackBounce: true
-                                });
-                            } catch (e) {}
-                        });
-
-                        var n = d.getElementsByTagName("script")[0],
-                            s = d.createElement("script"),
-                            f = function() { n.parentNode.insertBefore(s, n); };
-                        s.type = "text/javascript";
-                        s.async = true;
-                        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-                        if (w.opera == "[object Opera]") {
-                            d.addEventListener("DOMContentLoaded", f, false);
-                        } else { f(); }
-                    })(document, window, "yandex_metrika_callbacks");
-                    </script>
-                    <noscript>
-                        <div><img src="https://mc.yandex.ru/watch/45574977" style="position:absolute; left:-9999px;" alt="" /></div>
-                    </noscript>
-                    <!-- /Yandex.Metrika counter -->
-                </li>
+                <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>                
         </ul>
     </footer>
     <!-- Script

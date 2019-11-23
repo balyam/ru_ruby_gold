@@ -398,19 +398,19 @@ input[type="checkbox"] {
 
 #content-wrap {
 	min-height: 100%;
-	padding-top: 6%;
+	padding-top: 1%;
 }
 
 @media only screen and (max-width:900px) {
 	#content-wrap {
-		padding-top: 9%;
+		padding-top: 1%;
 	}
 
 }
 
 @media only screen and (max-width:768px) {
 	#content-wrap {
-		padding-top: 13%;
+		padding-top: 1%;
 	}
 
 }
@@ -418,14 +418,14 @@ input[type="checkbox"] {
 @media only screen and (max-width:600px) {
 	#content-wrap {
 		min-height: auto;
-		padding-top: 60px;
+		padding-top: 10px;
 	}
 
 }
 
 @media only screen and (max-width:400px) {
 	#content-wrap {
-		padding-top: 54px;
+		padding-top: 10px;
 	}
 
 }
@@ -1533,8 +1533,8 @@ footer a:focus {
    text-transform: uppercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   z-index: 100;
-   position: fixed;
+   /* z-index: 100;*/
+   /*position: fixed;*/
    left: 0;
    top: 0;
    background-color: #000;
