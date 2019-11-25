@@ -434,6 +434,14 @@ input[type="checkbox"] {
 	text-align: left;
 }
 
+#blog-content li, h4, h5, span {
+	font: 16px/36px "montserrat-regular", sans-serif;
+	color: #fff;
+	margin-bottom: 14px;
+	line-height: 20px;
+	padding: 0;
+}
+
 /* main
 ------------------------------------------ */
 main.row {
