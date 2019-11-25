@@ -25,6 +25,10 @@ class MainApp < Sinatra::Base
     erb :disclaimer
   end
 
+  get '/policy' do
+    erb :policy
+  end
+
   get '/allcurr' do
     erb :allcurr
   end
