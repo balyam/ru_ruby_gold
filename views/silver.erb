@@ -1,0 +1,61 @@
+<% content_for :title do %>
+<title>Цена серебра в
+<%= @metatag[:meta_country].first %> сегодня
+<%= @today.strftime("%d-%m-%Y")%>
+</title>
+<meta name="description" content="Сколько сегодня стоит 1 грамм серебра в <%= @metatag[:meta_currency].first %>. Цена в ломбардах <%= @metatag[:meta_country][1] %> на <%= @today.strftime(" %d-%m-%Y ")%>. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы.">
+<% end %>
+<% content_for :h1_block do %>
+<h1><%= @metatag[:h1_text].first%> </h1>
+<p> <%= @metatag[:h1_today].first %> <%= @today.strftime("%d-%m-%Y")%>. <%= @metatag[:h1_goldprice].first %> - (
+    <%= @price.fetch('gold_value')%> USD). <%= @metatag[:h1_usd].first %> - (
+    <%= @price.fetch('currency') %>
+<%= @url %>). <%= @metatag[:h1_price].first %>  </p>
+<h2>Цена 1 грамма золота в <%= @metatag[:meta_country].first %></h2>
+<p>Сегодня <%= @today.strftime("%d-%m-%Y")%>. Цена 1 тройской унции (
+    <%= @price.fetch('gold_value')%> USD) и курс доллара (
+    <%= @price.fetch('currency') %>
+<%= @url %>). Все цены указаны в <%= @metatag[:meta_currency].first %> </p>
+<hr>
+<% end %>
+<div id="counter" class="group">
+    <span>585<em>проба</em></span>
+    <span><em>-</em></span>
+    <span><%= @price.fetch('0.585') %><em><%= @url %></em></span>
+</div>
+<div id="counter" class="group">
+    <span>750<em>проба</em></span>
+    <span><em>-</em></span>
+    <span><%= @price.fetch("0.75")%><em><%= @url %></em></span>
+</div>
+<div>
+    
+    <!-- gold_lombardo_adapt -->
+    
+</div>
+<div id="counter" class="group">
+    <span>375<em>проба</em></span>
+    <span><em>-</em></span>
+    <span><%= @price.fetch("0.375") %><em><%= @url %></em></span>
+</div>
+<div id="counter" class="group">
+    <span>916<em>проба</em></span>
+    <span><em>-</em></span>
+    <span><%= @price.fetch("0.916") %> <em><%= @url %></em></span>
+</div>
+<div id="counter" class="group">
+    <span>999<em>проба</em></span>
+    <span><em>-</em></span>
+    <span><%= @price.fetch("0.999") %><em><%= @url %></em></span>
+</div>
+<% content_for :useful_content do %>
+<div id="blog-content">
+    <p>
+        В мировых золотых запасах находится около 18% добытого человечеством золота. За последние 50 лет объем золотых резервов заметно сократился. Между тем сокращение резервов происходит неравномерно
+        по времени, ускоряясь в периоды экономического роста и замедляясь, и даже снова увеличиваясь во времена рецессии.
+        В 2013-м году 59% спроса на золото было связано с ювелирной промышленностью, 8% − с радиоэлектронной, 1% − со стоматологией, 2% с другими отраслями промышленности. 21% от спроса на золото был обеспечен спросом со стороны инвесторов, 9% золота было закуплено центральными банками.
+    </p>
+    <p> Стоимость на золото фиксирует Лондонская биржа металлов, фиксация происходит ежедневно два раза в сутки. Фиксинг производят 5 членов золотого пула, которые за несколько минут определяют равновесную цену на золото, но фактическая цена может быть как больше, так и гораздо меньше в зависимости от человеческого фактора.
+    </p>
+</div>
+<% end %>

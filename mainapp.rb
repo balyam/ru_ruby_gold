@@ -48,6 +48,17 @@ class MainApp < Sinatra::Base
     end
   end
 
+  get '/:url/silver' do
+    @url = params[:url].upcase
+    if url_valid?(@url, @yaml_store)
+      @price = get_db($redis, @url)
+      @metatag = @yaml_store.fetch(@url)
+      erb :silver
+    else
+      halt 404
+    end
+  end
+
   not_found do
     erb :'404'
   end

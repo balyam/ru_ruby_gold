@@ -15,6 +15,7 @@ module GetRate
   require 'openexchangerates_data'
 
   gold_url = 'http://www.kitco.com/charts/livegold.html'
+  silver_url = 'http://www.kitco.com/charts/livesilver.html'
 
   mark_gold = [0.375, 0.583, 0.585, 0.750, 0.916, 0.999]
   currency_symbol = %w[KZT KGS RUB BYN AZN UZS UAH AMD GEL MDL TJS TMT]
@@ -27,6 +28,14 @@ module GetRate
   html_gold = Nokogiri::HTML(gold.body, 'UTF-8')
   html_gold.css('div.content-blk span#sp-bid').each do |elt|
     @gold_value = elt.text.strip.delete(',').to_f.round(2)
+  end
+
+# Let's get silver price!
+  agent = Mechanize.new
+  silver = agent.get(silver_url)
+  html_silver = Nokogiri::HTML(silver.body, 'UTF-8')
+  html_silver.css('div.content-blk span#sp-bid').each do |elt|
+    @silver_value = elt.text.strip.delete(',').to_f.round(2)
   end
 
   # Set currency value from json
