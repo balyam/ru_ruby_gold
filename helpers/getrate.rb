@@ -30,7 +30,7 @@ module GetRate
     @gold_value = elt.text.strip.delete(',').to_f.round(2)
   end
 
-# Let's get silver price!
+  # Let's get silver price!
   agent = Mechanize.new
   silver = agent.get(silver_url)
   html_silver = Nokogiri::HTML(silver.body, 'UTF-8')
@@ -43,6 +43,7 @@ module GetRate
     @store.hset(sym, :currency, rates['rates'][sym].to_f.round(2))
     @store.hset(sym, :gold_value, @gold_value)
     @store.hset(sym, :url, sym)
+    @store.hset(sym, :silver_value, @silver_value)
   end
 
   # Local prices for each marking probe of gold

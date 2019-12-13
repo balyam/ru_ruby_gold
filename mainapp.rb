@@ -48,7 +48,7 @@ class MainApp < Sinatra::Base
     end
   end
 
-  get '/:url/silver' do
+  get '/silver/:url' do
     @url = params[:url].upcase
     if url_valid?(@url, @yaml_store)
       @price = get_db($redis, @url)
