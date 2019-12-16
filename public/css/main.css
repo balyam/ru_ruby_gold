@@ -437,7 +437,7 @@ input[type="checkbox"] {
 #blog-content li, h4, h5, span {
 	font: 16px/36px "montserrat-regular", sans-serif;
 	color: #fff;
-	margin-bottom: 14px;
+	margin-bottom: 1px;
 	line-height: 20px;
 	padding: 0;
 }
@@ -459,16 +459,18 @@ main::after {
 }
 
 main h1 {
-	font: 20px/1.2em "montserrat-bold", sans-serif;
+	font: 20px/1.2em "montserrat-alternates", sans-serif;
 	color: #fbca08;
 	margin-bottom: 12px;
+	font-weight: bold;
 	padding: 0;
 }
 
 main h2 {
-	font: 20px/1.2em "montserrat-bold", sans-serif;
+	font: 18px/1.2em "montserrat-alternates", sans-serif;
 	color: #fbca08;
 	margin-bottom: 12px;
+	font-weight: bold;
 	padding: 0;
 }
 
@@ -516,11 +518,11 @@ main .site-header .logo a {
 	}
 
 	main h1 {
-		font: 32px/1.2em "montserrat-bold", sans-serif;
+		font: 30px/1.2em "montserrat-bold", sans-serif;
 	}
 
 	main h2 {
-		font: 32px/1.2em "montserrat-bold", sans-serif;
+		font: 28px/1.2em "montserrat-bold", sans-serif;
 	}
 
 	main p {
@@ -545,11 +547,11 @@ main .site-header .logo a {
 	}
 
 	main h1 {
-		font: 32px/1.2em "montserrat-bold", sans-serif;
+		font: 30px/1.2em "montserrat-bold", sans-serif;
 	}
 
 	main h2 {
-		font: 32px/1.2em "montserrat-bold", sans-serif;
+		font: 28px/1.2em "montserrat-bold", sans-serif;
 	}
 
 	main p {
@@ -569,10 +571,10 @@ main .site-header .logo a {
 	}
 
 	main h1 {
-		font: 30px/1.2em "montserrat-bold", sans-serif;
+		font: 28px/1.2em "montserrat-bold", sans-serif;
 	}
 	main h2 {
-		font: 30px/1.2em "montserrat-bold", sans-serif;
+		font: 26px/1.2em "montserrat-bold", sans-serif;
 	}
 	main p {
 		line-height: 20px;
@@ -590,10 +592,10 @@ main .site-header .logo a {
 	}
 
 	main h1 {
-		font: 28px/1.2em "montserrat-bold", sans-serif;
+		font: 26px/1.2em "montserrat-bold", sans-serif;
 	}
 	main h2 {
-		font: 28px/1.2em "montserrat-bold", sans-serif;
+		font: 24px/1.2em "montserrat-bold", sans-serif;
 	}
 	main p {
 		font: 14px/27px "montserrat-regular", sans-serif;
@@ -623,7 +625,7 @@ main .site-header .logo a {
 }
 
 #counter span {
-	font: 28px/1em "montserrat-bold", sans-serif;
+	font: 26px/1em "montserrat-bold", sans-serif;
 	display: block;
 	padding: 5px 0 5px;
 	min-width: 25%;
@@ -645,7 +647,7 @@ main .site-header .logo a {
 	}
 
 	#counter span {
-		font: 42px/1em "montserrat-bold", sans-serif;
+		font: 38px/1em "montserrat-bold", sans-serif;
 	}
 
 }
@@ -656,7 +658,7 @@ main .site-header .logo a {
 	}
 
 	#counter span {
-		font: 42px/1em "montserrat-bold", sans-serif;
+		font: 38px/1em "montserrat-bold", sans-serif;
 	}
 
 }
@@ -678,7 +680,7 @@ main .site-header .logo a {
 	}
 
 	#counter span {
-		font: 37px/1em "montserrat-bold", sans-serif;
+		font: 34px/1em "montserrat-bold", sans-serif;
 	}
 
 	#counter span em {
@@ -690,7 +692,7 @@ main .site-header .logo a {
 
 @media only screen and (max-width:400px) {
 	#counter span {
-		font: 31px/1em "montserrat-bold", sans-serif;
+		font: 28px/1em "montserrat-bold", sans-serif;
 	}
 
 	#counter span em {
@@ -836,8 +838,9 @@ main .site-header .logo a {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font: 13px/24px "montserrat-bold", sans-serif;
+	font: 13px/24px "montserrat-alternates", sans-serif;
 	letter-spacing: 1px;
+	font-weight: bold;
 }
 
 .modal-toggles li {
@@ -871,6 +874,23 @@ main .site-header .logo a {
 	height: 28px;
 	line-height: 28px;
 	background-image: url("../images/users.png");
+	left: 24px;
+	background-size: contain;
+}
+
+.modal-toggles .email-us a::before {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url("../images/email.png");
+	left: 24px;
+	background-size: contain;
+}
+.modal-toggles .silver-us a::before {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url("../images/silver.png");
 	left: 24px;
 	background-size: contain;
 }

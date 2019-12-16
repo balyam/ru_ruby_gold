@@ -9,10 +9,14 @@ KZT:
   - Qazaqstan teñgesi
   :h1_text:
   - Қазақстанда 1 грамм алтынның бағасы
+  :h1_silver_text:
+  - Қазақстандағы күміс бағасы
   :h1_today:
     - Бүгін
   :h1_goldprice:
     - Алтынның 1 трой унциясының бағасы
+  :h1_silverprice:
+    - Қазақстандағы күмістің 1 унциясының бағасы
   :h1_usd:
     - АҚШ долларының бағасы
   :h1_price:
@@ -27,10 +31,14 @@ UAH:
   - Украина
   :h1_text:
     - Ціна 1 грама золота в Україні
+  :h1_silver_text:
+    - Ціна срібла в Україні
   :h1_today:
     - Сьогодні
   :h1_goldprice:
     - Ціна 1 тройської унції золота
+  :h1_silverprice:
+    - Ціна 1 унції срібла в Україні
   :h1_usd:
     - Ціна долара США
   :h1_price:
@@ -45,10 +53,14 @@ UZS:
   - O'zbekiston so'mi
   :h1_text:
     - O'zbekistonda 1 gramm oltin narxi
+  :h1_silver_text:
+    - O'zbekistonda kumush narxi
   :h1_today:
     - Bugun
   :h1_goldprice:
     - Narxlar 1 troy oltin
+  :h1_silverprice:
+    - O'zbekistonda 1 untsiya kumush narxi
   :h1_usd:
     - AQSh dollari narxi
   :h1_price:
@@ -63,10 +75,14 @@ KGS:
   - Кыргыз сому
   :h1_text:
     - Кыргызстанда алтын 1 грамм баасы
+  :h1_silver_text:
+    - Кыргызстанда күмүш баасы
   :h1_today:
     - Бүгүн
   :h1_goldprice:
     - 1 герге боюнча алтындын баасы
+  :h1_silverprice:
+    - Кыргызстанда күмүш 1 унция баасы
   :h1_usd:
     - АКШ доллары баасы
   :h1_price:
@@ -81,10 +97,14 @@ RUB:
   - Российский рубль
   :h1_text:
     - The price of 1 gram of gold in Russia
+  :h1_silver_text:
+    - The price of silver in Russia
   :h1_today:
     - Today
   :h1_goldprice:
     - Price 1 troy ounce of gold
+  :h1_silverprice:
+    - Price 1 troy ounce of silver
   :h1_usd:
     - 1 USD
   :h1_price:
@@ -99,10 +119,14 @@ BYN:
   - Беларускі рубель
   :h1_text:
     - Цана 1 грама золата ў Беларусь
+  :h1_silver_text:
+    - Кошт срэбра ў Беларусі
   :h1_today:
     - Cёння
   :h1_goldprice:
     - Цана 1 тройскай унцыі золата
+  :h1_silverprice:
+    - Цана 1 унцыі срэбра ў Беларусі
   :h1_usd:
     - Кошт даляра ЗША
   :h1_price:
@@ -117,10 +141,14 @@ AZN:
   - Azərbaycan manatı
   :h1_text:
     - Azərbaycanda 1 qram qızılın qiyməti
+  :h1_silver_text:
+    - Azərbaycanda gümüş qiyməti
   :h1_today:
     - Bu gün
   :h1_goldprice:
     - Qiymət 1 troy unsiya qızıl
+  :h1_silverprice:
+    - Azərbaycanda 1 unsiya gümüşün qiyməti
   :h1_usd:
     - ABŞ dolları qiyməti
   :h1_price:
@@ -135,10 +163,14 @@ AMD:
   - Հայկական դրամ
   :h1_text:
     - Հայաստանում 1 գրամ ոսկու գինը
+  :h1_silver_text:
+    - Արծաթի գինը Հայաստանում
   :h1_today:
     - Այսօր
   :h1_goldprice:
     - Գինը 1 տրոյական ունցիա ոսկի
+  :h1_silverprice:
+    - Արծաթի 1 ունցիայի գինը Հայաստանում
   :h1_usd:
     - ԱՄՆ դոլարի գինը
   :h1_price:
@@ -153,10 +185,14 @@ GEL:
   - ქართული ლარი
   :h1_text:
     - საქართველოში 1 გრამი ოქროს ფასი
+  :h1_silver_text:
+    - ვერცხლის ფასი საქართველოში
   :h1_today:
     - დღეს
   :h1_goldprice:
     - ფასი 1 troy უნცია ოქროს
+  :h1_silverprice:
+    - 1 უნცია ვერცხლის ფასი საქართველოში
   :h1_usd:
     - აშშ დოლარის ფასი
   :h1_price:
@@ -171,10 +207,14 @@ MDL:
   - Leu moldovenesc
   :h1_text:
     - Prețul unui gram de aur în Moldova
+  :h1_silver_text:
+    - Prețul argintului în Moldova
   :h1_today:
     - Azi
   :h1_goldprice:
     - Preț 1 uncie de aur
+  :h1_silverprice:
+    - Prețul unei uncii de argint în Moldova
   :h1_usd:
     - Prețul în dolari americani
   :h1_price:
@@ -188,11 +228,15 @@ TJS:
   - таджикских сомони
   - Тоҷикистон сомонӣ
   :h1_text:
-  - Нархи 1 грамм тилло дар Тоҷикистон  
+  - Нархи 1 грамм тилло дар Тоҷикистон
+  :h1_silver_text:
+  - Нархи нуқра дар Тоҷикистон
   :h1_today:
     - Имрӯз
   :h1_goldprice:
-    - Нархи 1 тилло 
+    - Нархи 1 тилло
+  :h1_silverprice:
+    - Нархи 1 унцияи нуқра дар Тоҷикистон
   :h1_usd:
     - Нархи доллари ИМА
   :h1_price:
@@ -206,11 +250,15 @@ TMT:
   - туркменских манатах
   - Türkmen Manaty
   :h1_text:
-    - The price of 1 gram of gold in Turkmenistan 
+    - The price of 1 gram of gold in Turkmenistan
+  :h1_silver_text:
+    - Silver price in Turkmenistan 
   :h1_today:
     - Today
   :h1_goldprice:
     - Price 1 troy ounce of gold
+  :h1_silverprice:
+    - Price 1 troy ounce of silver in Turkmenistan
   :h1_usd:
     - 1 USD
   :h1_price:

@@ -82,10 +82,9 @@
             </div>
             <!-- /main-content form -->
             <div class="modal-toggles">
-                <ul>
-                    <li class="about-us"><a href="http://price.goldnp.com">Gold rate today</a></li>
-                    <li class="location"><a href="http://ru.goldnp.com/allcurr">Другие страны</a></li>
-                </ul>
+                <!-- metal_menu content --->
+                <%= yield_content :metal_menu %>
+                <!-- end of metal_menu --->
             </div>
 
             <!-- useful content --->
@@ -98,7 +97,7 @@
     <!-- /content-wrap -->
     <footer class="group">
         <ul class="footer-social">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="/contact"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>

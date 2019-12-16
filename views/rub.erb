@@ -48,6 +48,20 @@
     <span><em>-</em></span>
     <span><%= @price.fetch("0.999") %><em><%= @url %></em></span>
 </div>
+<% content_for :metal_menu do %>
+<ul>
+    <li class="about-us"><a href="http://price.goldnp.com">Gold rate today</a></li>
+    <li class="silver-us"><a href="./silver/<%= @url.downcase %>">Цена серебра</a></li>
+    
+</ul>
+
+<ul>
+    <li class="location"><a href="/allcurr">Другие страны</a></li>
+    <li class="email-us"><a href="/contact">Контакт</a></li>
+</ul>
+
+<% end %>
+
 <% content_for :useful_content do %>
 <div id="blog-content">
     <p>

@@ -25,3 +25,11 @@
    font-style: normal;
 }
 
+@font-face {
+   font-family: 'montserrat-alternates';   
+   src: url('../fonts/montserrat_alternates/MontserratAlternates-Regular.ttf') format('truetype'),
+   url('../fonts/montserrat_alternates/MontserratAlternates-Bold.ttf') format('truetype'),;
+   font-weight: normal;
+   font-style: normal;
+}
+

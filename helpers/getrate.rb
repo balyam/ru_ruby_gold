@@ -1,9 +1,9 @@
 require 'sinatra/base'
 
 # Array of prices per probe 585, 750,etc. USD
-def probe_arr(gold_price, arr_probe)
-  gramm_price = gold_price / 31.103
-  arr_probe.map { |probe| [probe, (gramm_price * probe).to_f.round(2)] }
+def probe_arr(metal_price, arr_probe)
+  gram_price = metal_price / 31.103
+  arr_probe.map { |probe| [probe, (gram_price * probe).to_f.round(2)] }
 end
 
 # All magic is here
@@ -18,6 +18,7 @@ module GetRate
   silver_url = 'http://www.kitco.com/charts/livesilver.html'
 
   mark_gold = [0.375, 0.583, 0.585, 0.750, 0.916, 0.999]
+  mark_silver = [1, 1000, 31.1035]
   currency_symbol = %w[KZT KGS RUB BYN AZN UZS UAH AMD GEL MDL TJS TMT]
   @store = Redis.new(url: ENV['REDISCLOUD_URL'])
   rates = OpenexchangeratesData::Client.new.latest
@@ -46,7 +47,7 @@ module GetRate
     @store.hset(sym, :silver_value, @silver_value)
   end
 
-  # Local prices for each marking probe of gold
+  # Local prices for each marking probe of gold in local currency
   usd_rate = probe_arr(@gold_value, mark_gold).to_h
   usd_rate.each do |key, value|
     currency_symbol.each do |sym|
@@ -55,5 +56,13 @@ module GetRate
     @store.hset('USD', key, value)
   end
 
+  # Local silver prices for each weight in local currency
+  silver_rate_in_usd = probe_arr(@silver_value, mark_silver).to_h
+  silver_rate_in_usd.each do |key, value|
+    currency_symbol.each do |sym|
+      @store.hset(sym, :"silver_#{key}", (value * rates['rates'][sym].to_f).round(2))
+    end
+  end
+
   puts 'Done!'
-end
+ end
