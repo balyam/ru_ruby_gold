@@ -9,78 +9,148 @@
 
 <url>
   <loc>http://ru.goldnp.com/</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/allcurr</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/kzt</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/kgs</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/azn</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/uzs</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/kzt</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/contact</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/disclaimer</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/policy</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/amd</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/byn</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/gel</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/mdl</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/rub</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/tjs</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/tmt</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ru.goldnp.com/uah</loc>
-  <lastmod>2018-08-27T05:13:42+00:00</lastmod>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/kgs</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/azn</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/uzs</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/amd</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/byn</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/gel</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/mdl</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/rub</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/tjs</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/tmt</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://ru.goldnp.com/silver/uah</loc>
+  <lastmod>2019-12-16T15:29:07+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
