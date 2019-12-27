@@ -1,9 +1,9 @@
 <% content_for :title do %>
-<title>Цена серебра в
+<title>Цена на серебро в
 <%= @metatag[:meta_country].first %> сегодня
 <%= @today.strftime("%d-%m-%Y")%>
 </title>
-<meta name="description" content="Сколько сегодня стоит 1 грамм серебра в <%= @metatag[:meta_currency].first %>. Цена на рынке <%= @metatag[:meta_country][1] %>. Узнайте цену на серебро за 1 грамм, унцию или один килограмм <%= @today.strftime(" %d-%m-%Y ")%>.">
+<meta name="description" content="Сколько сегодня стоит 1 грамм серебра в <%= @metatag[:meta_currency].first %>. Цена на рынке <%= @metatag[:meta_country][1] %>. Мировая цена на серебро за 1 грамм, унцию или один килограмм <%= @today.strftime(" %d-%m-%Y ")%>.">
 <% end %>
 <% content_for :h1_block do %>
 <h1><%= @metatag[:h1_silver_text].first%> </h1>
@@ -40,8 +40,8 @@
 <% content_for :metal_menu do %>
 
 <ul>
-    <li class="about-us"><a href="http://price.goldnp.com">Gold rate today</a></li>
-    <li class="about-us"><a href="/<%= @url.downcase %>">Цена на золото</a></li>
+    <li class="about-us"><a href="/<%= @url.downcase %>">Золото</a></li>
+    <li class="about-us"><a href="http://price.goldnp.com">Gold rate today</a></li>    
     
 </ul>
 
