@@ -32,8 +32,8 @@ module GetRate
   end
 
   # Let's get silver price!
-  agent = Mechanize.new
-  silver = agent.get(silver_url)
+  agent_silver = Mechanize.new
+  silver = agent_silver.get(silver_url)
   html_silver = Nokogiri::HTML(silver.body, 'UTF-8')
   html_silver.css('div.content-blk span#sp-bid').each do |elt|
     @silver_value = elt.text.strip.delete(',').to_f.round(2)
