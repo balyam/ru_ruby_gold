@@ -17,7 +17,7 @@ class MainApp < Sinatra::Base
 
   get '/' do    
     @metatag = @yaml_store.fetch('KZT')
-    @current_url = @price.fetch('url')
+    @current_url = @price_index.fetch('url')
     erb :index
   end
 
