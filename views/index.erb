@@ -7,23 +7,23 @@
 <% content_for :h1_block do %>
 <h1><%= @metatag[:h1_text].first%> </h1>
 <p> <%= @metatag[:h1_today].first %> <%= @today.strftime("%d-%m-%Y")%>. <%= @metatag[:h1_goldprice].first %> - (
-    <%= @price.fetch('gold_value')%> USD). <%= @metatag[:h1_usd].first %> - (
-<%= @price.fetch('currency') %> KZT). <%= @metatag[:h1_price].first %>  </p>
+    <%= @price_index.fetch('gold_value')%> USD). <%= @metatag[:h1_usd].first %> - (
+<%= @price_index.fetch('currency') %> KZT). <%= @metatag[:h1_price].first %>  </p>
 <h2>Цена 1 грамма золота в <%= @metatag[:meta_country].first %></h2>
 <p>Сегодня <%= @today.strftime("%d-%m-%Y")%>. Цена 1 тройской унции (
-    <%= @price.fetch('gold_value')%> USD) и курс доллара (
-<%= @price.fetch('currency') %> KZT). Все цены указаны в <%= @metatag[:meta_currency].first %> </p>
+    <%= @price_index.fetch('gold_value')%> USD) и курс доллара (
+<%= @price_index.fetch('currency') %> KZT). Все цены указаны в <%= @metatag[:meta_currency].first %> </p>
 <hr>
 <% end %>
 <div id="counter" class="group">
     <span>585<em>проба</em></span>
     <span><em>-</em></span>
-    <span><%= @price.fetch("0.585") %><em>тенге</em></span>
+    <span><%= @price_index.fetch("0.585") %><em>тенге</em></span>
 </div>
 <div id="counter" class="group">
     <span>750<em>проба</em></span>
     <span><em>-</em></span>
-    <span><%= @price.fetch("0.75")%><em>тенге</em></span>
+    <span><%= @price_index.fetch("0.75")%><em>тенге</em></span>
 </div>
 <div>
     
@@ -33,17 +33,17 @@
 <div id="counter" class="group">
     <span>375<em>проба</em></span>
     <span><em>-</em></span>
-    <span><%= @price.fetch("0.375") %><em>тенге</em></span>
+    <span><%= @price_index.fetch("0.375") %><em>тенге</em></span>
 </div>
 <div id="counter" class="group">
     <span>916<em>проба</em></span>
     <span><em>-</em></span>
-    <span><%= @price.fetch("0.916") %> <em>тенге</em></span>
+    <span><%= @price_index.fetch("0.916") %> <em>тенге</em></span>
 </div>
 <div id="counter" class="group">
     <span>999<em>проба</em></span>
     <span><em>-</em></span>
-    <span><%= @price.fetch("0.999") %><em>тенге</em></span>
+    <span><%= @price_index.fetch("0.999") %><em>тенге</em></span>
 </div>
 <% content_for :metal_menu do %>
 <ul>

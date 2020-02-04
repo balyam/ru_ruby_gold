@@ -23,6 +23,8 @@ module GetRate
   @store = Redis.new(url: ENV['REDISCLOUD_URL'])
   rates = OpenexchangeratesData::Client.new.latest
 
+  @last_update = Time.at(rates['timestamp']).strftime("%d-%m-%Y %k:%M")
+
   # Let's get gold price!
   agent = Mechanize.new
   gold = agent.get(gold_url)
@@ -45,6 +47,7 @@ module GetRate
     @store.hset(sym, :gold_value, @gold_value)
     @store.hset(sym, :url, sym)
     @store.hset(sym, :silver_value, @silver_value)
+    @store.hset(sym, :last_update, @last_update)
   end
 
   # Local prices for each marking probe of gold in local currency

@@ -12,10 +12,10 @@ class MainApp < Sinatra::Base
     @yaml_store ||= YAML.load_file(File.join('meta.yml'))
     @today = Time.now
     @allcurr = %w[KZT KGS RUB BYN AZN UZS UAH AMD GEL MDL TJS TMT]
+    @price_index = get_db($redis, 'KZT')
   end
 
-  get '/' do
-    @price = get_db($redis, 'KZT')
+  get '/' do    
     @metatag = @yaml_store.fetch('KZT')
     @current_url = @price.fetch('url')
     erb :index
