@@ -4,6 +4,7 @@
 <%= @today.strftime("%d-%m-%Y")%>
 </title>
 <meta name="description" content="Сколько сегодня стоит 1 грамм золота в <%= @metatag[:meta_currency].first %>. Цена в ломбардах <%= @metatag[:meta_country][1] %> на <%= @today.strftime(" %d-%m-%Y ")%>. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы.">
+<meta name="keywords" content="цена золота, <%= @metatag[:meta_country].first %>, <%= @metatag[:meta_currency].first %>"
 <% end %>
 <% content_for :h1_block do %>
 <h1><%= @metatag[:h1_text].first%> </h1>
