@@ -66,10 +66,10 @@
          <ul id="nav" class="nav">
          <li class=""><a class="smoothscroll" href="/allcurr"><img src="/images/worldwide.png"></a></li>       
             <% @top_menu_symbols.each do |link| %>
-            <% if link == "INR" %>
-              <li class=""><a class="smoothscroll" href="/"><img src="/images/<%= link %>.png"></a></li>
+            <% if link == "KZT" %>
+              <li class=""><a class="smoothscroll" href="/"><img src="/images/<%= link %>.png" title="<%= link %>" ></a></li>
             <% else %>
-              <li class=""><a class="smoothscroll" href="/<%= link.downcase %>"><img src="/images/<%= link %>.png"></a></li>
+              <li class=""><a class="smoothscroll" href="/<%= link.downcase %>" title="<%= link %>"><img src="/images/<%= link %>.png"></a></li>
             <% end %>
             <% end %>
                         

@@ -4,7 +4,7 @@
 <%= @today.strftime("%d-%m-%Y")%>
 </title>
 <meta name="description" content="Сколько сегодня стоит 1 грамм золота в <%= @metatag[:meta_currency].first %>. Цена в ломбардах <%= @metatag[:meta_country][1] %> на <%= @today.strftime(" %d-%m-%Y ")%>. Узнайте цену на золото 583, 585, 750, 850, 900, 916 пробы.">
-<meta name="keywords" content="цена золота, <%= @metatag[:meta_country].first %>, <%= @metatag[:meta_currency].first %>"
+<meta name="keywords" content="цена золота, <%= @metatag[:meta_country].first %>, <%= @metatag[:meta_currency].first %>">
 <% end %>
 <% content_for :h1_block do %>
 <h1><%= @metatag[:h1_text].first%> </h1>
@@ -51,7 +51,7 @@
 </div>
 <% content_for :metal_menu do %>
 <ul>
-    <li class="silver-us"><a href="./silver/<%= @url.downcase %>">Серебро</a></li>
+    <li class="silver-us"><a href="./silver/<%= @url.downcase %>" title="Цена на серебро">Цена cеребра</a></li>
     <li class="about-us"><a href="http://price.goldnp.com">Gold rate today</a></li>
     
     
