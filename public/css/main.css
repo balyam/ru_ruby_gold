@@ -664,7 +664,7 @@ main .site-header .logo a {
 
 @media only screen and (max-width:600px) {
 	#counter {
-		margin-bottom: 24px;
+		margin-bottom: 10px;
 	}
 
 	#counter span {
@@ -675,7 +675,7 @@ main .site-header .logo a {
 
 @media only screen and (max-width:500px) {
 	#counter {
-		margin-bottom: 12px;
+		margin-bottom: 5px;
 	}
 
 	#counter span {
@@ -948,145 +948,6 @@ main .site-header .logo a {
 /* 
 /* 06. =modals
 /* =================================================================== */
-#mod-about,
-#mod-map {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	min-height: 100%;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	-webkit-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	filter: alpha(opacity=0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	opacity: 0;
-	zoom: 1;
-}
-
-#mod-about {
-	-moz-transform: translateX(-100%);
-	-o-transform: translateX(-100%);
-	-webkit-transform: translateX(-100%);
-	-ms-transform: translateX(-100%);
-	transform: translateX(-100%);
-}
-
-#mod-map {
-	-moz-transform: translateX(100%);
-	-o-transform: translateX(100%);
-	-webkit-transform: translateX(100%);
-	-ms-transform: translateX(100%);
-	transform: translateX(100%);
-}
-
-#mod-map.is-visible,
-#mod-about.is-visible {
-	-moz-transform: translateX(0);
-	-o-transform: translateX(0);
-	-webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
-	transform: translateX(0);
-	filter: alpha(opacity=100);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	opacity: 1;
-	zoom: 1;
-}
-
-#mod-about.is-visible {
-	position: absolute;
-	min-height: none;
-}
-
-.modal-toggle {
-	position: fixed;
-	top: 30px;
-	left: 40px;
-	display: inline-block;
-	z-index: 999995;
-}
-
-.modal-toggle a {
-	display: block;
-	height: 46px;
-	width: 46px;
-	border-radius: 50%;
-	background: black;
-	text-indent: -99999em;
-	float: left;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-.modal-toggle a::before,
-.modal-toggle a::after {
-	content: '';
-	position: absolute;
-	display: inline-block;
-	width: 4px;
-	height: 14px;
-	border-radius: 2px;
-	top: 16px;
-	left: 21px;
-	background-color: white;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-.modal-toggle a::before {
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.modal-toggle a::after {
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-.modal-toggle a:hover::before,
-.modal-toggle a:hover::after {
-	background-color: #fbca08;
-}
-
-@media only screen and (max-width:600px) {
-	.modal-toggle {
-		left: 35px;
-	}
-
-	.modal-toggle a {
-		height: 42px;
-		width: 42px;
-	}
-
-	.modal-toggle a::before,
-	.modal-toggle a::after {
-		top: 14px;
-		left: 19px;
-	}
-
-}
-
-@media only screen and (max-width:400px) {
-	.modal-toggle {
-		left: 25px;
-	}
-
-}
 
 
 /* 
