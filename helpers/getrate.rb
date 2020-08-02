@@ -23,7 +23,7 @@ module GetRate
   @store = Redis.new(url: ENV['REDISCLOUD_URL'])
   rates = OpenexchangeratesData::Client.new.latest
 
-  @last_update = Time.at(rates['timestamp']).strftime("%d-%m-%Y %k:%M")
+  @last_update = Time.at(rates['timestamp']).strftime('%d-%m-%Y %k:%M')
 
   # Let's get gold price!
   agent = Mechanize.new
@@ -69,3 +69,4 @@ module GetRate
 
   puts 'Done!'
  end
+ 
