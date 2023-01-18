@@ -39,7 +39,7 @@ GEM
     ntlm-http (0.1.1)
     openexchangerates_data (0.1.1)
       httparty (~> 0.14.0)
-    rack (2.2.2)
+    rack (2.2.6.2)
     rack-protection (2.0.8.1)
       rack
     rack-test (1.1.0)
